@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./home.component.scss">
+  </head>
+  <body>
+
+  
+  <div appStyle>
+    <h2>Date Pipe</h2>
+    <p>Today's date: {{ currentDate | date: 'fullDate' }}</p>
+    
+    <h2>Cases</h2>
+    <p>Original Text: {{ originalText }}</p>
+    <p>Uppercase: {{ originalText | uppercase }}</p>
+    <p>Lowercase: {{ originalText | lowercase }}</p>
+    <p>Title Case: {{ originalText | titlecase }}</p>
+    <p>Slice (2-7): {{ originalText | slice: 2:7 }}</p>
+    
+    <h2>Number Pipes</h2>
+    <p>Original Number: {{ originalNumber }}</p>
+    <p>Currency: {{ originalNumber | currency: 'INR':true }}</p>
+    <p>Decimal: {{ originalNumber | number: '3.2-2' }}</p>
+    <p>Percentage: {{ originalNumber | percent }}</p>
+  
+    <h2>Time Pipe</h2>
+    <p>Original Time: {{ currentTime | date: 'mediumTime' }}</p>
+  
+  </div>
+</body></html>
